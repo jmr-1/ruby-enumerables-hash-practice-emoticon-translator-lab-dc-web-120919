@@ -11,7 +11,7 @@ def load_library(file)
   emotes.each do |key, value|
     #puts "#{key} and #{value}"
     new_key = value[1]
-    n_hash = {new_key=>"a"}
+    n_hash = {new_key=>"#{key}"}
     new_hash[:get_meaning].merge!(n_hash)
   end 
   
