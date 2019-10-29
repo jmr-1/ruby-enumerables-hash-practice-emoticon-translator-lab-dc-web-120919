@@ -8,8 +8,8 @@ def load_library(file)
   new_hash[:get_emoticon] = {}
   
   #JP emoticons 
-  emotes.each do |meaning, emoticon| #key = meaning, value = emoticon 
-    new_key = emoticon[1] #hardcoded 1 due to the library format 
+  emotes.each do |meaning, emoticon| #key = meaning, value = emoticon new_key = emoticon[1] #hardcoded 1 due to the library format 
+    
     n_hash = {emoticon[1]=>"#{meaning}"}
     new_hash[:get_meaning].merge!(n_hash)
   end 
