@@ -28,9 +28,10 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   
-  load_library(file_path)
+  translation_hash = load_library(file_path)
+  jp_equivalent = translation_hash[:get_emoticon][emoticon] 
   
-  
+  return jp_equivalent
 end
 
 def get_english_meaning
