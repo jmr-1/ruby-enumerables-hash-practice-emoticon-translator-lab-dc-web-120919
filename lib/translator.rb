@@ -39,6 +39,6 @@ end
 
 def get_english_meaning(file_path, emoticon)
   
-  
+  translation_hash = load_library(file_path)
 
 end
