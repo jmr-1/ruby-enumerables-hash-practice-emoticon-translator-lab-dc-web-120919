@@ -12,7 +12,7 @@ def load_library(file)
     #puts "#{key} and #{value}"
     new_key = value[1]
     n_hash = {new_key=>"a"}
-    new_hash[:get_meaning].merge!()
+    new_hash[:get_meaning].merge!(n_hash)
   end 
   
   puts "new hash"
