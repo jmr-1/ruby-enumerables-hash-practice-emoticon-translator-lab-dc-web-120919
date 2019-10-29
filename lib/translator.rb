@@ -15,10 +15,10 @@ def load_library(file)
   end 
   
   #US emoticons 
-  # emotes.each do |meaning, emoticons|
-  #   temp_hash = {emoticon[0]=>"#{meaning}"}
-  #   new_hash[:get_meaning].merge!(temp_hash)
-  # end 
+  emotes.each do |meaning, emoticon|
+    temp_hash = {emoticon[0]=>"#{meaning}"}
+    new_hash[:get_emoticon].merge!(temp_hash)
+  end 
   
   puts "new hash"
   puts new_hash 
