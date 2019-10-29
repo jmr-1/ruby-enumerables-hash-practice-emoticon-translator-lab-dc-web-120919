@@ -10,7 +10,6 @@ def load_library(file)
   
   emotes.each do |key, value|
     #puts "#{key} and #{value}"
-    puts value[1]
     new_key = value[1]
     new_hash[:get_meaning] = {new_key=>"a"}
   end 
